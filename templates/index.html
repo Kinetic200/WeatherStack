@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Display weather icon above the form -->
+        <img id="weather-icon" alt="weather icon" class="large-icon">
+
+        <h1>Weather App</h1>
+        <form id="weather-form">
+            <input type="text" id="city" placeholder="Enter a city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        
+        <div id="weather-result">
+            <h2 id="weather-city"></h2>
+            <p id="weather-temperature"></p>
+            <p id="weather-description"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

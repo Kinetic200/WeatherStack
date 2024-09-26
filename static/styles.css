@@ -1,0 +1,51 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;  /* This is the default background */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Larger Weather Icon Styling */
+.large-icon {
+    width: 150px; /* Adjust the size to make it larger */
+    height: 150px;
+    margin-bottom: 20px; /* Adds space between the icon and the form */
+    display: none; /* Hide icon initially */
+}
+
+/* Input and Button Styling */
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Weather Result Styling */
+#weather-result {
+    margin-top: 20px;
+}
+
+/* Hide the weather result initially */
+#weather-city, #weather-temperature, #weather-description {
+    display: none;
+}
